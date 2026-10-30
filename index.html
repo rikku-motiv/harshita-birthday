@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Happy Birthday Annu ♥</title>
+<meta name="theme-color" content="#1b0a20">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="confetti"></canvas>
+<div id="hearts"></div>
+
+<!-- ============ GATE ============ -->
+<div id="gate" role="dialog" aria-label="Birthday surprise">
+  <div class="stars" id="stars"></div>
+  <p class="gate-top" id="gateTop">Something special is waiting for you</p>
+  <h1 class="gate-title">Annu,<br>it's almost<br>your day</h1>
+  <div class="count" id="count" aria-live="off">
+    <div><b id="cd">0</b><small>days</small></div>
+    <div><b id="ch">0</b><small>hours</small></div>
+    <div><b id="cm">0</b><small>min</small></div>
+    <div><b id="cs">0</b><small>sec</small></div>
+  </div>
+  <button class="open-btn" id="openBtn">Open your surprise ♥</button>
+  <p class="gate-hint">Turn your volume up a little</p>
+</div>
+
+<main>
+  <!-- ============ HERO ============ -->
+  <header class="hero" id="top">
+    <p class="for">For Harshita, my Annu</p>
+    <h1>Happy Birthday <span>Babyyyy</span></h1>
+    <p class="date">31 October 2026</p>
+    <div class="scroll-cue">scroll down, my love</div>
+  </header>
+
+  <!-- ============ LETTER ============ -->
+  <section class="letter-sec" id="letterSec">
+    <div class="wrap">
+      <h2>A little letter for you</h2>
+      <p class="lead">Written with my whole heart</p>
+      <div class="letter" id="letter" aria-label="Love letter"></div>
+    </div>
+  </section>
+
+  <!-- ============ MEMORIES ============ -->
+  <section class="memories">
+    <div class="wrap" style="max-width:60rem">
+      <h2>Our beautiful memories</h2>
+      <p class="lead">Every picture is a day I would live again</p>
+      <div class="grid" id="memGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ RARE ============ -->
+  <section class="rare">
+    <h2>Rare moments</h2>
+    <p class="lead">The ones only I get to keep</p>
+    <div class="strip" id="rareStrip"></div>
+    <p class="swipe">swipe, then tap each card to flip it →</p>
+  </section>
+
+  <!-- ============ REASONS ============ -->
+  <section class="reasons">
+    <div class="wrap">
+      <h2>Why I love you</h2>
+      <p class="lead">Tap each card to see why</p>
+      <div class="cards" id="cards"></div>
+    </div>
+  </section>
+
+  <!-- ============ CAKE ============ -->
+  <section class="cake-sec">
+    <div class="wrap">
+      <h2>Make a wish</h2>
+      <p class="lead">Close your eyes, then blow the candles</p>
+
+      <svg class="cake" id="cake" viewBox="0 0 220 200" aria-hidden="true">
+        <g class="flames">
+          <g class="flame"><ellipse cx="70"  cy="38" rx="7" ry="13" fill="#ffd36b"/><ellipse cx="70"  cy="42" rx="3.5" ry="7" fill="#fff3c4"/></g>
+          <g class="flame"><ellipse cx="110" cy="30" rx="7" ry="13" fill="#ffd36b"/><ellipse cx="110" cy="34" rx="3.5" ry="7" fill="#fff3c4"/></g>
+          <g class="flame"><ellipse cx="150" cy="38" rx="7" ry="13" fill="#ffd36b"/><ellipse cx="150" cy="42" rx="3.5" ry="7" fill="#fff3c4"/></g>
+        </g>
+        <g class="smoke" fill="none" stroke="#ffdbe5" stroke-width="2" stroke-linecap="round">
+          <path d="M70 40 q-6 -10 0 -20"/><path d="M110 32 q-6 -10 0 -20"/><path d="M150 40 q-6 -10 0 -20"/>
+        </g>
+        <rect x="66"  y="52" width="8" height="34" rx="3" fill="#ffdbe5"/>
+        <rect x="106" y="44" width="8" height="42" rx="3" fill="#f4d9a6"/>
+        <rect x="146" y="52" width="8" height="34" rx="3" fill="#ffdbe5"/>
+        <rect x="40" y="84" width="140" height="42" rx="10" fill="#ff7aa8"/>
+        <path d="M40 98 q12 14 24 0 t24 0 t24 0 t24 0 t24 0 t20 0 v-6 h-140z" fill="#ffdbe5"/>
+        <rect x="20" y="122" width="180" height="56" rx="12" fill="#c93d79"/>
+        <path d="M20 138 q15 16 30 0 t30 0 t30 0 t30 0 t30 0 t30 0 v-8 h-180z" fill="#ffdbe5"/>
+        <ellipse cx="110" cy="182" rx="105" ry="10" fill="#f4d9a6"/>
+        <text x="110" y="168" text-anchor="middle" font-family="Great Vibes, cursive" font-size="22" fill="#fff">Annu ♥</text>
+      </svg>
+
+      <button class="wish-btn" id="blowBtn">Blow the candles</button>
+      <p class="wish-out" id="wishOut"></p>
+    </div>
+  </section>
+
+  <!-- ============ FINALE ============ -->
+  <section class="finale">
+    <div class="big-heart">♥</div>
+    <h2>I love you, Annu</h2>
+    <p style="max-width:28rem;margin:.6rem auto 0;padding:0 .5rem">
+      Today, tomorrow and every birthday after this one, I want to be the one who is standing next to you.
+    </p>
+    <p class="sign">Forever yours, Rajat</p>
+    <button class="ghost" id="replay">Watch again from the start</button>
+  </section>
+</main>
+
+<button class="fab" id="bomb" aria-label="Party bomb">🎉</button>
+<button class="fab" id="music" aria-label="Toggle music" hidden>♪</button>
+
+<div id="lb"><img alt=""><p></p></div>
+
+<script src="script.js"></script>
+</body>
+</html>
